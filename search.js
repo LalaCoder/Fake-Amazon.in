@@ -1,15 +1,17 @@
+var lock = "An Empty String";
+
 function search() {
     let select = document.getElementById("Search-select");
     var java = select.value;
     let search = document.getElementById("search-input");
     if (java == "Google") {
-        var lock = 'https://www.google.com/search?q=';
+        lock = 'https://www.google.com/search?q=';
     } else if (java == "Amazon") {
-        var lock = 'https://amazon.in/s?k=';
+        lock = 'https://amazon.in/s?k=';
     } else if (java == "All") {
-        var lock = 'https://www.google.com/search?q=';
+        lock = 'https://www.google.com/search?q=';
         broadcast("Both");
-        var lock = 'https://amazon.in/s?k=';
+        lock = 'https://amazon.in/s?k=';
     }
     broadcast("Normal");
 }
