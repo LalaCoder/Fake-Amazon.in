@@ -6,6 +6,8 @@ var java = null;
 function search() {
     select = document.getElementById("Search-select");
     java = select.value;
+    var check = true;
+
     if (java == "Google") {
         lock = 'https://www.google.com/search?q=';
     } else if (java == "Amazon") {
@@ -13,9 +15,12 @@ function search() {
     } else if (java == "Youtube") {
         lock = 'https://www.youtube.com/results?search_query=';
     } else {
-        window.open("https://www.java.com/", '_self');
+        alert("Please Select a Branch to Search...");
+        var check = false;
     }
-    broadcast("Normal");
+    if (check) {
+        broadcast("Normal");
+    }
 }
 
 function broadcast(type) {
