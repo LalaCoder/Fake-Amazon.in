@@ -7,28 +7,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS.css">
     <link rel="Icon" type="image/x-icon" href="Icon.PNG">
-    <script src="search.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="hdn-head">
+            <h2>Fake-amazon.in</h2>
+        </div>
+        <div class="hdn-content">
+            <h3>Digital Content & Devices</h3>
+            <ul>
+                <div>
+                    <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Shop By Department</h3>
+            <ul>
+                <div>
+                    <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Computers</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Programs & Features</h3>
+            <ul>
+                <div>
+                    <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark" onclick="ClosePanel();"></i>
+    <div class="black"></div>
     <!-- The Site starts with a good Header -->
     <header>
         <div id="navbar">
             <!-- /* Amazon Icon or Logo */ -->
             <div id="nav-logo" class="border">
                 <a href="https://www.amazon.com/" target="_blank">
-                    <div class="logo"></div>
+                    <div class="logo">Fake</div>
                 </a>
             </div>
-            <!-- Address Deliver to India Section -->
-            <a href="https://scratch.mit.edu/projects/832839423/fullscreen/" target="_blank">
-                <div id="nav-address" class="border">
-                    <p id="add-1">Deliver to</p>
-                    <div id="add-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p id="add-2">India</p>
-                    </div>
-                </div>
-            </a>
             <!-- Search Box -->
             <div id="nav-search">
                 <select id="Search-select">
@@ -37,7 +82,7 @@
                     <option>Google</option>
                     <option>Youtube</option>
                 </select>
-                <input placeholder="Search Anything" id="search-input">
+                <input placeholder=" Search Anything on the Web" id="search-input">
                 <div id="search-icon" onclick="search();">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -45,21 +90,20 @@
             <!-- Sign In Panel -->
             <a href="Loader.html">
                 <div id="nav-sign_in" class="border">
-                    <p><span>Hello, Sign In</span></p>
-                    <p class="Style">Account & Lists</p>
+                    <p class="Style">Hello, Sign In</p>
                 </div>
             </a>
             <!-- Refund and Return Section -->
-            <a href="https://scratch.mit.edu/projects/832839423/editor/" target="_blank">
+            <a href="https://studio.penguinmod.com/fullscreen.html#9502370951532" target="_blank">
                 <div id="nav-Return" class="border">
-                    <p><span>Returns</span></p>
-                    <p class="Style">& Order</p>
+                    <p><span>My Phone</span></p>
+                    <p class="Style">V.2</p>
                 </div>
             </a>
             <!-- Cart Icon and Cart Text Area -->
             <a href="https://lalaCoder.github.io/www.Chandriyaan-3.com/" target="_blank">
                 <div id="nav-cart" class="border">
-                    <i class="fa-solid fa-cart-shopping"><!-- Nothing --></i>Cart
+                    <i class="fa-solid fa-rocket"></i>Chandriyaan-3
                 </div>
             </a>
             <!-- Navbar Exit -->
@@ -67,25 +111,26 @@
         <!-- Panel Construction -->
         <div id="panel">
             <!-- All Icon and Content -->
-            <a href="https://lalacoder.github.io/www.Lala.com/" target="_blank">
+            <a>
                 <div id="panel-all">
-                    <i class="fa-solid fa-bars"><!-- Nothing --></i> All
+                    <div class="second-1" onclick="OpenPanel();">
+                        <i class="fas fa-bars"><!-- Nothing --></i> All
+                    </div>
                 </div>
             </a>
             <div id="panel-options">
-                <a href="https://www.youtube.com" target="_blank"><p>Today's Deals</p></a>
-                <a target="_blank" href="https://www.google.com"><p>Customer Service</p></a>
-                <p>Registry</p>
-                <p>Gift Cards</p>
-                <p>Sell</p>
+                <a href="https://www.youtube.com" target="_blank"><p>YouTube</p></a>
+                <a target="_blank" href="https://www.google.com"><p>Google</p></a>
+                <a href="https://lalacoder.github.io/www.Lala.com/" target="_blank"><p>www.Lala.com</p></a>
             </div>
-            <a target="_blank" href="https://my-phone-workdesk.github.io/My-Phone-V.1/"><div id="panel-deals">Shop deals in Electronics</div></a>
+            <a target="_blank" href="https://my-phone-workdesk.github.io/My-Phone-V.2/"><div id="panel-deals">My Phone V.2</div></a>
+            <a target="_blank" href="https://my-phone-workdesk.github.io/My-Phone-V.1/"><div id="panel-deals">My Phone V.1</div></a>
         </div>
     </header>
     <!-- Header Finish Here and Now the Main Screen or Hero Section Starts from here--->
     <div class="hero-section">
         <div id="hero-message">
-            <p>You are on Fake Amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/?ref=aisgw_intl_stripe_in" target="_blank">Click here to go to amazon.in</a></p>
+            <p>You are on Fake-amazon.in. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/?ref=aisgw_intl_stripe_in" target="_blank">Click here to go to amazon.in</a></p>
         </div>
     </div>
     <!-- Hero Section or main screen ended and series of items shopping in different categories starts now -->
@@ -108,7 +153,7 @@
         <div id="item4" class="item">
             <h2>Electronics and <br> Smart Gadgets</h2>
             <br><div><!-- Nothing just Picture --></div><br>
-            <a target="_blank" href="https://my-phone-workdesk.github.io/My-Phone-V.2/"><p>See more</p></a>
+            <p>See more</p>
         </div>
         <div id="item5" class="item">
             <h2>Beauty picks & Makeups</h2>
@@ -134,60 +179,12 @@
     <!-- Here comes the end means the Footer -->
     <footer>
         <!-- Panel Number. 1 -->
-        <a href=""><div id="foot-panel1">Back to Top</div></a>
-        <!-- Panel Number. 2 -->
-        <div id="foot-panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Invester Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Science</a>
-            </ul>
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell products on Amazon</a>
-                <a>Sell on Amazon Business</a>
-                <a>Sell apps on Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Advertise Your Products</a>
-                <a>Self-Publish with Us</a>
-                <a>Host an Amazon Hub</a>
-                <a>> See More Make Money with Us</a>
-            </ul>
-            <ul>
-                <p>Amazon Payment Products</p>
-                <a>Amazon Business Card</a>
-                <a>Shop with Points</a>
-                <a>Reload Your Balance</a>
-                <a>Amazon Currency Converter</a>
-            </ul>
-            <ul>
-                <p>Let Us Help You</p>
-                <a>Amazon and COVID-19</a>
-                <a>Your Account</a>
-                <a>Your Orders</a>
-                <a>Shipping Rates & Policies</a>
-                <a>Returns & Replacements</a>
-                <a>Manage Your Content and Devices</a>
-                <a>Amazon Assistant</a>
-                <a>Help</a>
-            </ul>
-        </div>
+        <a onclick="window.scrollTo({top:0})"><div id="foot-panel1">Back to Top</div></a>
+
         <!-- Panel Number. 3 -->
         <div id="foot-panel3">
-            <div class="logo"></div>
-        </div>
-        <!-- Panel Number. 4 -->
-        <div id="foot-panel4">
-            <div id="pages">
-                <a>Conditions of Use</a>
-                <a>Privacy Notice</a>
-                <a>Your Ads Privacy Choices</a>
-            </div>
-            <div id="copyright">© 1996-2023, Amazon.com, Inc. or its affiliates</div>
+            <div class="logo">Fake</div>
+            <p>.in</p>
         </div>
     </footer>
     <!-- The Site ends with the good experience in my first Frontend project website  -->
